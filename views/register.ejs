@@ -1,0 +1,30 @@
+<% include partials/header %>
+
+<div id="main-section" class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+                <div class="card card-body">
+                    <h3 class="text-center mb-4">Sign-up</h3>
+                    <form action="/register" method="POST">
+                        <fieldset>
+                            <div class="form-group">
+                                <input class="form-control input-lg" placeholder="Username" name="user[username]" type="text" required>
+                            </div>                            
+                            <div class="form-group">
+                                <input class="form-control input-lg" placeholder="Password" name="user[password]" value="" type="password" required>
+                            </div>                            
+                            <div class="form-group">
+                                <input class="form-control input-lg" placeholder="John@doe.com" name="user[email]" value="" type="email">
+                            </div>                                                 
+                            <input class="btn btn-lg btn-primary btn-block" value="Sign Me Up" type="submit">
+                        </fieldset>
+                    </form>                   
+                    
+                </div>
+        </div>
+    </div>
+</div>
+
+
+
+<% include partials/footer %>
